@@ -1,0 +1,58 @@
+.flex-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.banner-big {
+    width: 90vw;
+    height: 50vh;
+    margin: 5vh 5vw;
+}
+
+.bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    filter: contrast(50%);
+}
+
+#bg-a {
+    z-index: -3;
+    top: 0;
+    height: 50%;
+    background-color: #e5f2fa;
+}
+
+#bg-b {
+    z-index: -1;
+    background-image: url("vendor/forest-5426239-2.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#bg-c {
+    z-index: -2;
+    top: 50%;
+    height: 50%;
+    background-color: #121818;
+}
+
+#top-menu {
+    width: 100vw;
+    height: 64px;
+    background-color: darkslategrey;
+    border-radius: 0 0 32px 32px / 0 0 16px 16px;
+    box-shadow: 0 0 64px;
+}
+
+#portrait {
+    max-width: 50%;
+    max-height: 100%;
+    filter: contrast(140%);
+    border-radius: 32px;
+    box-shadow: 0 0 64px;
+}

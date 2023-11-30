@@ -1,7 +1,26 @@
+.font {
+    font-family: "Josefin Sans", sans-serif;
+    font-variant: small-caps;
+}
+
+.title {
+    font-size: 64px;
+}
+
+.subtitle {
+    font-size: 32px;
+}
+
 .flex-row {
     display: flex;
     flex-direction: row;
     justify-content: center;
+}
+
+.flex-mid {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .banner-big {
@@ -55,4 +74,26 @@
     filter: contrast(140%);
     border-radius: 32px;
     box-shadow: 0 0 64px;
+}
+
+#desc {
+    flex-direction: column;
+    background: linear-gradient(0.25turn, #3f87a666, #ebf8e166, #f69d3c66);
+    box-shadow: 0 0 64px;
+}
+
+#name {
+    background: #3a517155;
+    color: #e5f2fa;
+    border-radius: 0 0 32px 32px / 0 0 16px 16px;
+    box-shadow: 0 0 64px;
+    padding: 1vh 1vw 0;
+}
+
+#job {
+    text-shadow: 1px 1px 2px pink, 2px 2px 3px black, 2px 2px 3px black;
+    background: linear-gradient(#e6646511, #9198e511);
+    color: indigo;
+    border-radius: 0 0 32px 32px / 0 0 16px 16px;
+    padding: 0 1vw 0.5vh;
 }

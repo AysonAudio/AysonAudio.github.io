@@ -1,5 +1,10 @@
-.font {
+.font-thin {
     font-family: "Josefin Sans", sans-serif;
+    font-variant: small-caps;
+}
+
+.font-med {
+    font-family: "Macondo", cursive;
     font-variant: small-caps;
 }
 
@@ -70,15 +75,16 @@
 #name {
     background: #3a517155;
     color: #e5f2fa;
+    text-shadow: 4px 4px 6px black;
     border-radius: 0 0 32px 32px / 0 0 16px 16px;
     box-shadow: 0 0 64px #e5f2fa;
     padding: 6px 1vw 0;
 }
 
 #job {
-    text-shadow: 1px 1px 2px pink, 2px 2px 3px black, 2px 2px 3px black;
     background: linear-gradient(#e6646511, #9198e511);
     color: indigo;
+    text-shadow: 2px 2px 3px #0008;
     border-radius: 0 0 32px 32px / 0 0 16px 16px;
     padding: 0 1vw 3px;
 }

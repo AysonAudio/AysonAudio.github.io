@@ -41,7 +41,7 @@
     background-size: 100% auto;
     background-repeat: no-repeat;
     background-position: top;
-    filter: contrast(50%);
+    filter: contrast(30%);
 }
 
 #top-menu {
@@ -55,22 +55,23 @@
 #portrait {
     width: 226px;
     height: 300px;
-    filter: contrast(140%);
+    filter: contrast(110%);
     border-radius: 32px;
-    box-shadow: 0 0 64px;
+    box-shadow: 8px 8px 8px, -8px -8px 8px #e5f2fa55;
 }
 
 #desc {
     flex-direction: column;
     background: linear-gradient(0.25turn, #3f87a666, #ebf8e166, #f69d3c66);
     box-shadow: 0 0 64px;
+    filter: contrast(140%);
 }
 
 #name {
     background: #3a517155;
     color: #e5f2fa;
     border-radius: 0 0 32px 32px / 0 0 16px 16px;
-    box-shadow: 0 0 64px;
+    box-shadow: 0 0 64px #e5f2fa;
     padding: 6px 1vw 0;
 }
 

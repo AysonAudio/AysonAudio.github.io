@@ -91,6 +91,7 @@
     padding-top: 16px;
     box-sizing: border-box;
     border-radius: 0 0 32px 32px / 0 0 16px 16px;
+    width: 100%; /* fix weird bug: width too big when adding iframe to #stuff */
 }
 
 #main > a {
@@ -117,10 +118,25 @@
     border-left: none;
 }
 
-#grid {
+#stuff {
     margin: 16px;
     padding: 16px;
     gap: 16px;
     box-sizing: border-box;
     border-radius: 32px 32px 0 0 / 16px 16px 0 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#stuff > * {
+    border-radius: 32px 32px 0 0 / 16px 16px 0 0;
+}
+
+#stuff > .bandcamp {
+    box-sizing: border-box;
+    flex-grow: 1;
+    max-width: 480px;
+    height: 300px;
 }

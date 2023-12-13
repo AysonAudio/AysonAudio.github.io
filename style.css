@@ -179,3 +179,22 @@
     max-width: 480px;
     height: 300px;
 }
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+.short {
+    display: none;
+}
+
+@media (max-width: 649px) {
+    .short {
+        display: inline-block;
+    }
+    .long {
+        display: none;
+    }
+    #main {
+        justify-content: end;
+        padding-right: 32px;
+    }
+}

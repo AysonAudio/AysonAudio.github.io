@@ -221,6 +221,13 @@ body {
     height: 315px;
 }
 
+#stuff .doc {
+    box-sizing: border-box;
+    flex-grow: 1;
+    max-width: 560px;
+    aspect-ratio: 3 / 4;
+}
+
 #stuff > .bandcamp {
     box-sizing: border-box;
     border: none;

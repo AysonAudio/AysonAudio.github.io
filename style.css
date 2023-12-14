@@ -206,15 +206,18 @@
     display: none;
 }
 
-@media (max-width: 649px) {
+@media (max-width: 859px) {
+    #main {
+        justify-content: end;
+        padding-right: 32px;
+    }
+}
+
+@media (max-width: 685px) {
     .short {
         display: inline-block;
     }
     .long {
         display: none;
-    }
-    #main {
-        justify-content: end;
-        padding-right: 32px;
     }
 }

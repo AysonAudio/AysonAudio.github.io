@@ -5,6 +5,6 @@
 
 <br>
 
--   Thin Name Font - [Josefin Sans](https://fonts.google.com/specimen/Josefin+Sans)
--   Medium Body Font - [Macondo](https://fonts.google.com/specimen/Macondo)
--   Thick Logo Font - [Preahvihear](https://fonts.google.com/specimen/Preahvihear)
+-   Thin Font - [Josefin Sans](https://fonts.google.com/specimen/Josefin+Sans)
+-   Medium Font - [Macondo](https://fonts.google.com/specimen/Macondo)
+-   Thick Font - [Preahvihear](https://fonts.google.com/specimen/Preahvihear)

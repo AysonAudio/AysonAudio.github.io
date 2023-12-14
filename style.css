@@ -7,13 +7,6 @@ body {
     background: linear-gradient(0.25turn, #3f87a666, #ebf8e166, #f69d3c66);
 }
 
-.content {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-
 .font-thin {
     font-family: "Josefin Sans", sans-serif;
     font-variant: small-caps;
@@ -36,9 +29,26 @@ body {
     font-size: 32px;
 }
 
+.headline {
+    font-size: 48px;
+}
+
+.content {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
 .flex-row {
     display: flex;
     flex-direction: row;
+    justify-content: center;
+}
+
+.flex-col {
+    display: flex;
+    flex-direction: column;
     justify-content: center;
 }
 
@@ -186,6 +196,31 @@ body {
     border-radius: 32px 32px 0 0 / 16px 16px 0 0;
 }
 
+#stuff > .headline {
+    margin: 0;
+}
+
+#stuff > .showcase {
+    margin: 0 32px;
+    box-sizing: border-box;
+    flex-grow: 1;
+    max-width: 560px;
+}
+
+#stuff > .showcase > img {
+    width: 80%;
+    margin: 16px 10%;
+    border-radius: 32px 32px 0 0 / 16px 16px 0 0;
+    border: 8px ridge #878cc6;
+}
+
+#stuff .vid {
+    box-sizing: border-box;
+    flex-grow: 1;
+    max-width: 560px;
+    height: 315px;
+}
+
 #stuff > .bandcamp {
     box-sizing: border-box;
     border: none;
@@ -201,13 +236,6 @@ body {
 .long-b {
     width: 480px;
     height: 320px;
-}
-
-#stuff > .vid {
-    box-sizing: border-box;
-    flex-grow: 1;
-    max-width: 560px;
-    height: 315px;
 }
 
 #credits {

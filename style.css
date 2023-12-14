@@ -156,7 +156,7 @@ body {
     padding-top: 16px;
     box-sizing: border-box;
     border-radius: 0 0 32px 32px / 0 0 16px 16px;
-    width: 100%; /* fix weird bug: width too big when adding iframe to #stuff */
+    width: 100%; /* fix weird bug: width too big when adding iframe to .stuff */
     user-select: none;
 }
 
@@ -184,7 +184,7 @@ body {
     border-left: none;
 }
 
-#stuff {
+.stuff {
     margin: 16px;
     padding: 16px;
     gap: 16px;
@@ -192,43 +192,43 @@ body {
     border-radius: 32px 32px 0 0 / 16px 16px 0 0;
 }
 
-#stuff > * {
+.stuff > * {
     border-radius: 32px 32px 0 0 / 16px 16px 0 0;
 }
 
-#stuff > .headline {
+.stuff > .headline {
     margin: 0;
 }
 
-#stuff > .showcase {
+.stuff > .showcase {
     margin: 0 32px;
     box-sizing: border-box;
     flex-grow: 1;
     max-width: 560px;
 }
 
-#stuff > .showcase > img {
+.stuff > .showcase > img {
     width: 80%;
     margin: 16px 10%;
     border-radius: 32px 32px 0 0 / 16px 16px 0 0;
     border: 8px ridge #878cc6;
 }
 
-#stuff .vid {
+.stuff .vid {
     box-sizing: border-box;
     flex-grow: 1;
     max-width: 560px;
     height: 315px;
 }
 
-#stuff .doc {
+.stuff .doc {
     box-sizing: border-box;
     flex-grow: 1;
     max-width: 560px;
     aspect-ratio: 3 / 4;
 }
 
-#stuff > .bandcamp {
+.stuff > .bandcamp {
     box-sizing: border-box;
     border: none;
 }

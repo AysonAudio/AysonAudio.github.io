@@ -117,6 +117,11 @@ body {
     filter: contrast(140%);
 }
 
+#desc > * {
+    margin: 0;
+    font-weight: normal;
+}
+
 #name {
     background: #3a517155;
     color: #e5f2fa;

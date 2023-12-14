@@ -1,3 +1,7 @@
+body {
+    min-width: 360px;
+}
+
 .box {
     box-shadow: 0 0 64px;
     background: linear-gradient(0.25turn, #3f87a666, #ebf8e166, #f69d3c66);
@@ -45,9 +49,9 @@
 }
 
 .banner-big {
-    width: 90vw;
+    width: 90%;
     height: 300px;
-    margin: 30px 5vw;
+    margin: 30px 5%;
 }
 
 #bg {
@@ -80,6 +84,7 @@
     border-left: 2px solid #d5d5d5;
     box-shadow: 4px 4px 2px #0007;
     text-decoration: none;
+    height: 55px;
 }
 
 #logo > img {
@@ -118,7 +123,7 @@
     text-shadow: 4px 4px 6px black;
     border-radius: 0 0 32px 32px / 0 0 16px 16px;
     box-shadow: 0 0 64px #e5f2fa;
-    padding: 6px 1vw 0;
+    padding: 6px 1% 0;
 }
 
 #job {
@@ -126,11 +131,11 @@
     color: indigo;
     text-shadow: 2px 2px 3px #0008;
     border-radius: 0 0 32px 32px / 0 0 16px 16px;
-    padding: 0 1vw 3px;
+    padding: 0 1% 3px;
 }
 
 #main {
-    width: 100vw;
+    width: 100%;
     height: 64px;
     gap: 16px;
     padding-top: 16px;
@@ -178,9 +183,19 @@
 
 #stuff > .bandcamp {
     box-sizing: border-box;
+    border: none;
+}
+
+.short-b {
     flex-grow: 1;
-    max-width: 480px;
-    height: 300px;
+    max-width: 704px;
+    max-height: 594px;
+    aspect-ratio: 472 / 660;
+}
+
+.long-b {
+    width: 480px;
+    height: 320px;
 }
 
 #stuff > .vid {
@@ -202,22 +217,64 @@
 
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 
-.short {
-    display: none;
-}
-
-@media (max-width: 859px) {
+@media (max-width: 860px) {
     #main {
         justify-content: end;
         padding-right: 32px;
     }
 }
 
-@media (max-width: 685px) {
+@media (max-width: 420px) {
+    #logo > span {
+        display: none;
+    }
+    #logo > div {
+        display: none;
+    }
+
+    .title {
+        font-size: 48px;
+    }
+    .subtitle {
+        font-size: 24px;
+    }
+}
+
+@media (min-width: 687px) {
+    .short {
+        display: none;
+    }
+    .long {
+        display: inline-block;
+    }
+}
+@media (max-width: 686px) {
     .short {
         display: inline-block;
     }
     .long {
         display: none;
+    }
+}
+
+/* Hide this way to allow bandcamp album art to load */
+@media (min-width: 541px) {
+    .short-b {
+        position: fixed;
+        left: -999px;
+    }
+    .long-b {
+        position: inline-block;
+        left: 0;
+    }
+}
+@media (max-width: 540px) {
+    .short-b {
+        position: inline-block;
+        left: 0;
+    }
+    .long-b {
+        position: fixed;
+        left: -999px;
     }
 }
